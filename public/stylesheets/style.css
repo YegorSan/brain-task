@@ -4,7 +4,7 @@
 
 
 body {
-  padding: 50px;
+  padding: 80px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -12,6 +12,48 @@ a {
   color: #00B7FF;
 }
 
+/* Top Section Logo*/
+.top-logo-section {
+	
+	
+}
+.logo {
+	flex: 1;
+}
+
+.addresstext {
+	flex: 1;
+	text-align: end;
+    padding-top: 10px;
+    padding-right: 10px;
+	align-self: flex-end;
+    line-height: 7px;
+}
+.phonetext {
+	flex: 1;
+	align-self: flex-end;
+	line-height: 7px;
+
+}
+.buttontop {
+	    align-self: flex-end;
+        
+}
+.buttontop .btn {
+  
+  
+  background-color: #2d8ff9a8;
+  color: white;
+  font-size: 16px;
+  padding: 24px 58px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.buttontop:hover {
+	color: aqua;
+}
 /* NAV*/
 
 .navigation {
@@ -154,6 +196,7 @@ a {
   text-align: center;
 }
 
+
 /* Bottom Section - Clients/News */
 
 .bottom-section {
@@ -238,6 +281,23 @@ a {
      display: flex;
      justify-content: center;
 	}
+	
+	.top-logo-section {
+		display: flex;
+	    justify-content: center;
+		max-width: 1200px;
+	}
+	.logo {
+}
+
+.addresstext{
+
+}
+.phonetext {
+	
+}
+.buttontop {
+	}
 }
 
 
@@ -262,4 +322,18 @@ a {
     display: block;
     text-align: left;
   }
+}
+
+
+@media screen and (max-width: 600px) {
+  .phonetext {
+    display: none;
+  }
+  .addresstext {
+		display: none;
+	}
+  .buttontop {
+	  
+	}
+	
 }
