@@ -3,17 +3,17 @@ extends layout
 block content
 
 
-  h1 Создай хедер
+  
+  
 
 
-
-  nav(class="topnav" id="myTopnav")
+  nav(class="navigation" id="myNav")
    a(href="#" class="active") О Компании 
    a(href="#") Вакансии
    a(href="#") Контакты
    a(href="#") Клиенты
    a(href="javascript:void(0);" class="icon" onclick="myFunction()")
-    i(class="fa fa-bars")
+    icon(class="fa fa-bars")
 
 	
 	
@@ -22,21 +22,21 @@ block content
      img(src="images/main.jpg" class="top-img")
       
   
-  section(class="test")
+  section(class="blue-section")
     
 
 
     div(class="text-row")
         div(class="text-vario")
          h1 VARIO-EXPO systems
-        div(class="text_vario-rus")
+        div(class="text-vario-rus")
          h3 - ИНДИВИДУАЛЬНОЕ СТРОИТЕЛЬСТВО ВЫСТАВОЧНЫХ СТЕНДОВ.
 		 
     div(class="container-text-top")
 
-     div(class="paragraph1")
+     article(class="paragraph1")
       p(class="line") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-     div(class="paragraph2")
+     article(class="paragraph2")
       p(class="line") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
   section(class="services")
