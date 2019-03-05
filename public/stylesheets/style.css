@@ -4,8 +4,11 @@
 
 
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 40px 50px 0 50px;
+      font-size: 14px;
+    letter-spacing: 1px;
+	font-family: 'Open Sans', sans-serif;
+
 }
 
 a {
@@ -19,6 +22,11 @@ a {
 }
 .logo {
 	flex: 2;
+}
+
+.logo img {
+	height: 100px;
+    padding: 0px 0px 10px 0px;
 }
 
 .addresstext {
@@ -42,18 +50,18 @@ a {
     padding-left: 10px;
 }
 .buttontop {
-	    align-self: flex-end;
-        margin-bottom: 7px;
+  align-self: flex-end;
+  margin: 0 0 8px 0;
+     
 
 }
 .buttontop .btn {
   
-    transition-duration: 0.8s;
-
+  transition-duration: 0.8s;
   background-color: #0c80b7;
   color: white;
   font-size: 16px;
-  padding: 24px 46px 26px 34px;
+  padding: 22px 50px 22px 30px;
   border: none;
   cursor: pointer;
   text-align: center; 
@@ -61,8 +69,8 @@ a {
 }
 
 .buttontop .btn:hover {
-	color: black;
-	background-color: darkgrey;
+    color: white;
+    background-color: #39a9d4;
 
 }
 
@@ -112,11 +120,16 @@ a {
     top: 80px;
     right: 80px;
     background: rgba(0, 0, 0, 0.75);
-    padding: 11px 50px;
     color: white;
-    margin: 0;
-    font: 22px Sans-Serif;
-	line-height: 10px;
+	max-width: 300px;
+    padding: 0px 18px 16px 33px;
+    font-family: 'Open Sans', sans-serif;
+}
+.topimgtext h1 {
+	
+	font-size: 30px;
+    letter-spacing: 1.5px;
+	
 }
 
 /* 
@@ -134,8 +147,6 @@ img top*/
 
 .blue-section {
   background: #0c80b7;
-  align-items: center;
-  margin-top: -5px;
 }
 
 .blue-section h1 {
@@ -170,6 +181,8 @@ img top*/
 }
 .paragraph1 {
   flex: 1;
+  padding-right: 13px;
+
 }
 .paragraph2 {
   flex: 1;
@@ -177,8 +190,8 @@ img top*/
 
 .line { 
     border-left: 1px solid #ccc; 
-    
-    padding-left: 10px; 
+    padding-left: 10px;
+    padding-right: 10px;
    }
 
 /* Services Section */
@@ -194,13 +207,16 @@ img top*/
   box-sizing: border-box;
   flex: 1;
   padding: 20px;
-
+  text-align: justify;
 }
 
 .servicebox h1{
 	
     float: right;
-    padding: 20px;
+}
+
+.servicebox img {
+	height: 100px;
 }
 
 .servicebox:nth-child(1){background-color: #8183a72e;}
@@ -211,17 +227,18 @@ img top*/
 
 .images-img {
   max-width: 100%;
-  height: auto;
+  height: auto; 
+  opacity: 0.7;
 }
 .imagebox:hover .images-img {
-  opacity: 0.8;
-  transition: .5s ease;
+  opacity: 1;
+  transition: .8s ease;
 }
 
 .imagebox {
   position: relative;
   height: auto;
-  flex: 1;
+ 
 }
 
 .imagebox .btn {
@@ -230,13 +247,14 @@ img top*/
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #2d8ff9a8;
+  background-color: #2683e8c4;
   color: white;
   font-size: 16px;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
   text-align: center;
+	
 }
 
 
@@ -267,21 +285,29 @@ img top*/
  padding: 0.5px;
  width: 100px;
  height: 97px;
+ opacity: 0.6
+}
+
+.img-row img:hover {
+	opacity: 1;
 }
 
 .clients h1 {
-
+    font-size: 30px;
+	font-weight: normal;
 }
 
 .news {
-	background: ;
 	width: 100%;
 	height: auto;
 	flex: 1;
-	padding: 20px;
+	padding: 20px 20px 20px 40px;
+	}
+
+.news h1 {
+	 font-size: 30px;
+	font-weight: normal;
 }
-
-
 .text1 {
 	flex: 1;
 	padding: 20px 20px 20px 40px;
@@ -295,6 +321,42 @@ img top*/
 .posttime {
 	color: darkgrey;
 	padding: 10px;
+}
+
+/* Footer */
+
+
+.footer {
+	max-height: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+
+.footer-logo {
+    max-height: 90px;
+
+}
+
+.footer-links a {
+    padding: 0px 8px 0px 0px;
+
+}
+
+.line-separator {
+    width: 100%;
+    height: 2px;
+    background-color: #0c80b7;
+    margin-top: 3px;
+    margin-bottom: 3px;
+	
+}
+
+.not-active {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 /* Media Queries */
 
@@ -313,7 +375,7 @@ img top*/
 	
 	.images-img {
      max-width: 100%;
-     height: auto;
+     height: 200px;
     }
 	
 	.bottom-section {
@@ -332,10 +394,33 @@ img top*/
 		display: flex;
 	    justify-content: center;
 		max-width: 1200px;
+		    padding: 0px 0 35px 0;
 	}
 
 	
 	
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
 
 
@@ -346,10 +431,18 @@ img top*/
     display: block;
   }
 	.buttontop .btn {
-		    width: 100%;
+		width: 100%;
+		animation: pulse 2s infinite;
 
 	}
 	
+	.navigation a.active {
+		display: none;
+	}
+	
+	.topimage .topimgtext {
+		right: 15px;
+	}
 	
 }
 
@@ -382,7 +475,9 @@ img top*/
 	
 	body {
   padding: 20px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 	
