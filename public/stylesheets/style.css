@@ -4,12 +4,12 @@
 
 
 body {
-  padding: 80px;
+  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #1eabe2;
 }
 
 /* Top Section Logo*/
@@ -18,7 +18,7 @@ a {
 	
 }
 .logo {
-	flex: 1;
+	flex: 2;
 }
 
 .addresstext {
@@ -33,31 +33,47 @@ a {
 	flex: 1;
 	align-self: flex-end;
 	line-height: 7px;
-
+  
+	
+     
+}
+.bordered {
+	border-left: 1px solid #2d8ff9a8 ; 
+    padding-left: 10px;
 }
 .buttontop {
 	    align-self: flex-end;
-        
+        margin-bottom: 7px;
+
 }
 .buttontop .btn {
   
-  
+    transition-duration: 0.8s;
+
   background-color: #2d8ff9a8;
   color: white;
   font-size: 16px;
   padding: 24px 58px;
   border: none;
   cursor: pointer;
-  text-align: center;
+  text-align: center; 
+  flex: 1;
 }
+  @keyframes  {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
 
-.buttontop:hover {
-	color: aqua;
+.buttontop .btn:hover {
+	color: black;
+	background-color: darkgrey;
+
 }
 /* NAV*/
 
 .navigation {
 	padding-bottom: 70px;
+    padding-top: 20px;
 }
 .navigation a {
   float: left;
@@ -87,9 +103,8 @@ a {
 
 .top-img {
   max-width: 100%;
-  height: auto;
   width: 1200px;
-  height: 600px;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -98,13 +113,15 @@ a {
 .blue-section {
   background: #0c80b7;
   align-items: center;
+  margin-top: -5px;
 }
 
 .blue-section h1 {
   max-width: 1000px;
   color: white;
   font-family: 'Poppins', black;
-  font-size: 40px;
+  font-size: 41px;
+  letter-spacing: -0.5px;
 }
 
 .text-row {
@@ -112,7 +129,6 @@ a {
 	align-items: center;	
 }
 .text-vario {
-	font-size:23px;
 	padding: 0 0 0 50px;
 }
 
@@ -175,6 +191,11 @@ a {
   max-width: 100%;
   height: auto;
 }
+.imagebox:hover .images-img {
+  opacity: 0.8;
+  transition: .5s ease;
+}
+
 .imagebox {
   position: relative;
   height: auto;
@@ -249,7 +270,10 @@ a {
 	padding:  20px 40px 20px 0px;
 	text-align: end;
 }
-
+.posttime {
+	color: darkgrey;
+	padding: 10px;
+}
 /* Media Queries */
 
 @media (min-width: 900px) {
@@ -296,8 +320,7 @@ a {
 .phonetext {
 	
 }
-.buttontop {
-	}
+
 }
 
 
@@ -307,6 +330,7 @@ a {
     float: right;
     display: block;
   }
+	
 }
 
 
@@ -325,7 +349,7 @@ a {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .phonetext {
     display: none;
   }
@@ -335,5 +359,11 @@ a {
   .buttontop {
 	  
 	}
+	
+	body {
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
 	
 }
