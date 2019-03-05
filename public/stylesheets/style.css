@@ -50,10 +50,10 @@ a {
   
     transition-duration: 0.8s;
 
-  background-color: #2d8ff9a8;
+  background-color: #0c80b7;
   color: white;
   font-size: 16px;
-  padding: 24px 58px;
+  padding: 24px 46px 26px 34px;
   border: none;
   cursor: pointer;
   text-align: center; 
@@ -64,6 +64,10 @@ a {
 	color: black;
 	background-color: darkgrey;
 
+}
+
+.buttontop .btn i {
+	width: 30px;
 }
 /* NAV*/
 
@@ -339,6 +343,8 @@ img top*/
 	
 }
 
+	
+	
 }
 
 
@@ -348,7 +354,10 @@ img top*/
     float: right;
     display: block;
   }
-	
+	.buttontop .btn {
+		    width: 100%;
+
+	}
 }
 
 
